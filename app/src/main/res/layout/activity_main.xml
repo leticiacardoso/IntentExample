@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/screen_padding"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/main_screen_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize= "@dimen/text_size"
+        android:text="@string/click_below_to_go_to_next_screen" />
+
+    <Button
+        android:id="@+id/main_screen_btn"
+        android:onClick="callNextScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next_screen" />
+
+</LinearLayout>
